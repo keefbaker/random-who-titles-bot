@@ -9,8 +9,6 @@ def tweet_it(text, config):
     """
     """
     client = create_client(config, 'w')
-    print('ok')
-    print(text)
     response = client.create_tweet(text=text)
     print(response)
 
