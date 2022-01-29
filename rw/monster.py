@@ -42,8 +42,16 @@ monsters = [
         "p": "vashta nerada"
     },
     {
-        "s": "tory",
-        "p": "tories"
+        "s": "dinosaur",
+        "p": "dinosaurs"
+    },
+    {
+        "s": "planet",
+        "p": "planets"
+    },
+    {
+        "s": "doctor",
+        "p": "doctors"
     },
     {
         "s": "chumbly",
