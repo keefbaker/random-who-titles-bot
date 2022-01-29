@@ -21,31 +21,40 @@ doctors = [
     "David Tennant",
     "Matt Smith",
     "Peter Capaldi",
-    "Jodie Whittaker"
+    "Jodie Whittaker",
+    "Jo Martin"
 ]
 
 def get_episode_title():
     monster = Monster()
     sentences = [
     f'{noun().capitalize()} of the {monster.plural.capitalize()}.',
-    f'{noun().capitalize()} of the {monster.plural.capitalize()}',
-    f'The {monster.plural.capitalize()} {verb()}',
-    f'The {monster.singular.capitalize()} {noun()}',
-    f'{monster.plural.capitalize()} in {place()}',
-    f'{monster.plural.capitalize()} {verb()} {place()}',
-    f'{verb().capitalize()} the {monster.singular}',
+    f'{noun().capitalize()} of the {monster.plural.capitalize()}.',
+    f'The {monster.plural.capitalize()} {verb().capitalize()}.',
+    f'The {monster.singular.capitalize()} {noun().capitalize()}.',
+    f'{monster.plural.capitalize()} in {place()}!',
+    f'{monster.plural.capitalize()} {verb().capitalize()} {place()}',
+    f'{verb().capitalize()} the {monster.singular.capitalize()}.',
     f'{noun().capitalize()} of the {monster.plural.capitalize()}!',
     ]
 
     return random.choice(sentences)
 
+def get_hashtag():
+    hashtags = [
+        "",
+        "#DoctorWho",
+        "#DrWho",
+        "#DoctorWhoFlux"
+    ]
+    return random.choice(hashtags)
+
 episode = get_episode_title()
+hashtag = get_hashtag()
 if len(sys.argv) > 1 and sys.argv[1] == "test":
     print(episode)
     sys.exit(0)
 
-message = f"{episode} starring {random.choice(doctors)}"
+message = f"{episode} starring {random.choice(doctors)} {hashtag}"
 config = get_config("./config.yaml")
 tweet_it(message, config)
-
-
