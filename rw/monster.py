@@ -1,78 +1,27 @@
 import random
 
 monsters = [
-    {
-        "s" : "dalek",
-        "p" : "daleks"
-    },
-    {
-        "s": "cybernam",
-        "p": "cybermen"
-    },
-    {
-        "s": "sea devil",
-        "p": "sea devils"
-    },
-    {
-        "s": "angel",
-        "p": "angels"
-    },
-    {
-        "s": "silurian",
-        "p": "silurians"
-    },
-    {
-        "s": "master",
-        "p": "master"
-    },
-    {
-        "s": "sontaran",
-        "p": "sontarans"
-    },
-    {
-        "s": "rutan",
-        "p": "rutans"
-    },
-    {
-        "s": "bandrill",
-        "p": "bandrills"
-    },
-    {
-        "s": "vashta nerada",
-        "p": "vashta nerada"
-    },
-    {
-        "s": "dinosaur",
-        "p": "dinosaurs"
-    },
-    {
-        "s": "planet",
-        "p": "planets"
-    },
-    {
-        "s": "doctor",
-        "p": "doctors"
-    },
-    {
-        "s": "chumbly",
-        "p": "chumblies"
-    },
-    {
-        "s": "terileptil",
-        "p": "terileptils"
-    },
-    {
-        "s": "judoon",
-        "p": "judoon"
-    },
-    {
-        "s": "zygon",
-        "p": "zygons"
-    }
+    {"s": "dalek", "p": "daleks"},
+    {"s": "cybernam", "p": "cybermen"},
+    {"s": "sea devil", "p": "sea devils"},
+    {"s": "angel", "p": "angels"},
+    {"s": "silurian", "p": "silurians"},
+    {"s": "master", "p": "master"},
+    {"s": "sontaran", "p": "sontarans"},
+    {"s": "rutan", "p": "rutans"},
+    {"s": "bandrill", "p": "bandrills"},
+    {"s": "vashta nerada", "p": "vashta nerada"},
+    {"s": "dinosaur", "p": "dinosaurs"},
+    {"s": "planet", "p": "planets"},
+    {"s": "doctor", "p": "doctors"},
+    {"s": "chumbly", "p": "chumblies"},
+    {"s": "terileptil", "p": "terileptils"},
+    {"s": "judoon", "p": "judoon"},
+    {"s": "zygon", "p": "zygons"},
 ]
 
-class Monster:
 
+class Monster:
     def __init__(self):
         self.singular = ""
         self.plural = ""
