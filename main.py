@@ -29,15 +29,15 @@ doctors = [
 def get_episode_title():
     monster = Monster()
     sentences = [
-        f"{noun().capitalize()} of the {monster.plural.capitalize()}.",
-        f"{noun().capitalize()} for the {monster.plural.capitalize()}.",
-        f"{noun().capitalize()} of the {monster.plural.capitalize()}.",
-        f"The {monster.plural.capitalize()} {verb().capitalize()}.",
-        f"The {monster.singular.capitalize()} {noun().capitalize()}.",
-        f"{monster.plural.capitalize()} in {place()}!",
+        f"{noun().capitalize()} of the {monster.plural.capitalize()}",
+        f"{noun().capitalize()} for the {monster.plural.capitalize()}",
+        f"{noun().capitalize()} of the {monster.plural.capitalize()}",
+        f"The {monster.plural.capitalize()} {verb().capitalize()}",
+        f"The {monster.singular.capitalize()} {noun().capitalize()}",
+        f"{monster.plural.capitalize()} in {place()}",
         f"{monster.plural.capitalize()} {verb().capitalize()} {place()}",
-        f"{verb().capitalize()} the {monster.singular.capitalize()}.",
-        f"{noun().capitalize()} of the {monster.plural.capitalize()}!",
+        f"{verb().capitalize()} the {monster.singular.capitalize()}",
+        f"{noun().capitalize()} of the {monster.plural.capitalize()}",
     ]
 
     return random.choice(sentences)
@@ -55,6 +55,6 @@ if len(sys.argv) > 1 and sys.argv[1] == "test":
     print(episode)
     sys.exit(0)
 
-message = f"{episode} starring {random.choice(doctors)} {hashtag}"
+message = f"{episode}, starring {random.choice(doctors)}. {hashtag}"
 config = get_config("./config.yaml")
 tweet_it(message, config)
