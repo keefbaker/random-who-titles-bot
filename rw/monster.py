@@ -20,6 +20,11 @@ monsters = [
     {"s": "zygon", "p": "zygons"},
 ]
 
+monsters += [{"s": "dalek", "p": "daleks"}] * 5
+monsters += [{"s": "cybernam", "p": "cybermen"}] * 4
+monsters += [{"s": "master", "p": "master"}] * 3
+monsters += [{"s": "sontaran", "p": "sontarans"}] * 2
+
 
 class Monster:
     def __init__(self):

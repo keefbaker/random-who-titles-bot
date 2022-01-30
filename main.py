@@ -30,6 +30,7 @@ def get_episode_title():
     monster = Monster()
     sentences = [
         f"{noun().capitalize()} of the {monster.plural.capitalize()}.",
+        f"{noun().capitalize()} for the {monster.plural.capitalize()}.",
         f"{noun().capitalize()} of the {monster.plural.capitalize()}.",
         f"The {monster.plural.capitalize()} {verb().capitalize()}.",
         f"The {monster.singular.capitalize()} {noun().capitalize()}.",
