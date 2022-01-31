@@ -18,6 +18,8 @@ monsters = [
     {"s": "terileptil", "p": "terileptils"},
     {"s": "judoon", "p": "judoon"},
     {"s": "zygon", "p": "zygons"},
+    {"s": "morbius", "p": "Time Lords"},
+    {"s": "omega", "p": "CIA"}
 ]
 
 monsters += [{"s": "dalek", "p": "daleks"}] * 5
