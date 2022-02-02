@@ -28,16 +28,18 @@ doctors = [
 
 def get_episode_title():
     monster = Monster()
+    monster_two = Monster()
     sentences = [
-        f"{noun().capitalize()} of the {monster.plural.capitalize()}",
-        f"{noun().capitalize()} for the {monster.plural.capitalize()}",
-        f"{noun().capitalize()} of the {monster.plural.capitalize()}",
-        f"The {monster.plural.capitalize()} {verb().capitalize()}",
-        f"The {monster.singular.capitalize()} {noun().capitalize()}",
-        f"{monster.plural.capitalize()} in {place()}",
-        f"{monster.plural.capitalize()} {verb().capitalize()} {place()}",
-        f"{verb().capitalize()} the {monster.singular.capitalize()}",
-        f"{noun().capitalize()} of the {monster.plural.capitalize()}",
+        f"{noun().capitalize()} of the {monster.plural}",
+        f"{noun().capitalize()} for the {monster.plural}",
+        f"{noun().capitalize()} of the {monster.plural}",
+        f"The {monster.plural} {verb().capitalize()}",
+        f"The {monster.singular} {noun().capitalize()}",
+        f"{monster.plural} in {place()}",
+        f"{monster.plural} {verb().capitalize()} {place()}",
+        f"{verb().capitalize()} the {monster.singular}",
+        f"{noun().capitalize()} of the {monster.plural}",
+        f"{monster.plural} vs {monster_two.plural}"
     ]
 
     return random.choice(sentences)
