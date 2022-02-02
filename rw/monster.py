@@ -4,28 +4,31 @@ monsters = [
     {"s": "Dalek", "p": "Daleks"},
     {"s": "Cyberman", "p": "Cybermen"},
     {"s": "Sea Devil", "p": "Sea Devils"},
-    {"s": "angel", "p": "angels"},
-    {"s": "silurian", "p": "silurians"},
-    {"s": "master", "p": "master"},
-    {"s": "sontaran", "p": "sontarans"},
-    {"s": "rutan", "p": "rutans"},
-    {"s": "bandrill", "p": "bandrills"},
+    {"s": "Angel", "p": "Angels"},
+    {"s": "Silurian", "p": "Silurians"},
+    {"s": "Rutan", "p": "Rutans"},
+    {"s": "Bandrill", "p": "Bandrills"},
     {"s": "Vashta Nerada", "p": "Vashta Nerada"},
-    {"s": "dinosaur", "p": "dinosaurs"},
-    {"s": "planet", "p": "planets"},
-    {"s": "doctor", "p": "doctors"},
-    {"s": "chumbly", "p": "chumblies"},
-    {"s": "terileptil", "p": "terileptils"},
-    {"s": "judoon", "p": "judoon"},
-    {"s": "zygon", "p": "zygons"},
-    {"s": "morbius", "p": "Time Lords"},
-    {"s": "omega", "p": "CIA"}
+    {"s": "Dinosaur", "p": "Dinosaurs"},
+    {"s": "Planet", "p": "Planets"},
+    {"s": "Doctor", "p": "Doctors"},
+    {"s": "Chumbly", "p": "Chumblies"},
+    {"s": "Terileptil", "p": "Terileptils"},
+    {"s": "Judoon", "p": "Judoon"},
+    {"s": "Zygon", "p": "Zygons"},
+    {"s": "Morbius", "p": "Time Lords"},
+    {"s": "Omega", "p": "CIA"},
+    {"s": "Axon", "p": "Axons"},
+    {"s": "Wirrn", "p": "Wirrn"},
+    {"s": "Ice Warrior", "p": "Ice Warriors"},
+    {"s": "Yeti", "p": "Yeti"},
+    {"s": "Auton", "p": "Autons"}
 ]
 
-monsters += [{"s": "dalek", "p": "daleks"}] * 5
-monsters += [{"s": "cyberman", "p": "cybermen"}] * 4
-monsters += [{"s": "master", "p": "master"}] * 3
-monsters += [{"s": "sontaran", "p": "sontarans"}] * 2
+monsters += [{"s": "Dalek", "p": "Daleks"}] * 6
+monsters += [{"s": "Cyberman", "p": "Cybermen"}] * 5
+monsters += [{"s": "Master", "p": "Master"}] * 4
+monsters += [{"s": "Sontaran", "p": "Sontarans"}] * 3
 
 
 class Monster:
