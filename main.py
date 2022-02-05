@@ -18,6 +18,7 @@ doctors = [
     "Colin Baker",
     "Sylvester McCoy",
     "Paul McGann",
+    "John Hurt",
     "Christopher Eccleston",
     "David Tennant",
     "Matt Smith",
