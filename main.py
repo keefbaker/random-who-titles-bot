@@ -43,7 +43,7 @@ def get_episode_title(randomize=True):
         f"{monster.plural} vs {monster_two.plural}",
         f"The {adjective()} {noun()}",
         f"The {adjective()} {monster.singular}",
-        f"{adjective()} {monster.plural} and {adjective()} {monster.plural}",
+        f"{adjective()} {monster.plural}, {adjective()} {monster.plural}",
     ]
     if randomize:
         return random.choice(sentences)
