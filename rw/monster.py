@@ -22,7 +22,7 @@ monsters = [
     {"s": "Wirrn", "p": "Wirrn"},
     {"s": "Ice Warrior", "p": "Ice Warriors"},
     {"s": "Yeti", "p": "Yeti"},
-    {"s": "Auton", "p": "Autons"}
+    {"s": "Auton", "p": "Autons"},
 ]
 
 monsters += [{"s": "Dalek", "p": "Daleks"}] * 6

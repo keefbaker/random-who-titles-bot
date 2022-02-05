@@ -6805,4 +6805,4 @@ nouns = [
 
 
 def noun():
-    return random.choice(nouns).lower()
+    return random.choice(nouns).capitalize()

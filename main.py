@@ -2,6 +2,7 @@ import sys
 import random
 from rw.nouns import noun
 from rw.verbs import verb
+from rw.adjectives import adjective
 from rw.monster import Monster
 from rw.places import place
 from rw.config import get_config
@@ -26,23 +27,27 @@ doctors = [
 ]
 
 
-def get_episode_title():
+def get_episode_title(randomize=True):
     monster = Monster()
     monster_two = Monster()
     sentences = [
-        f"{noun().capitalize()} of the {monster.plural}",
-        f"{noun().capitalize()} for the {monster.plural}",
-        f"{noun().capitalize()} of the {monster.plural}",
-        f"The {monster.plural} {verb().capitalize()}",
-        f"The {monster.singular} {noun().capitalize()}",
+        f"{noun()} of the {monster.plural}",
+        f"{noun()} for the {monster.plural}",
+        f"{noun()} of the {monster.plural}",
+        f"The {monster.plural} {verb()}",
+        f"The {monster.singular} {noun()}",
         f"{monster.plural} in {place()}",
-        f"{monster.plural} {verb().capitalize()} {place()}",
-        f"{verb().capitalize()} the {monster.singular}",
-        f"{noun().capitalize()} of the {monster.plural}",
-        f"{monster.plural} vs {monster_two.plural}"
+        f"{monster.plural} {verb()} {place()}",
+        f"{verb()} the {monster.singular}",
+        f"{noun()} of the {monster.plural}",
+        f"{monster.plural} vs {monster_two.plural}",
+        f"The {adjective()} {noun()}",
+        f"The {adjective()} {monster.singular}",
+        f"{adjective()} {monster.plural} and {adjective()} {monster.plural}",
     ]
-
-    return random.choice(sentences)
+    if randomize:
+        return random.choice(sentences)
+    return sentences
 
 
 def get_hashtag():
@@ -54,7 +59,9 @@ episode = get_episode_title()
 hashtag = get_hashtag()
 
 if len(sys.argv) > 1 and sys.argv[1] == "test":
-    print(episode)
+    episodes = get_episode_title(False)
+    for episode in episodes:
+        print(episode)
     sys.exit(0)
 
 message = f"{episode}, starring {random.choice(doctors)}. {hashtag}"

@@ -528,4 +528,4 @@ verbs = [
 
 
 def verb():
-    return random.choice(verbs).lower()
+    return random.choice(verbs).capitalize()
