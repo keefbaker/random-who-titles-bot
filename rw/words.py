@@ -39,6 +39,7 @@ class Monster:
     """
     simple class for monster building
     """
+
     def __init__(self):
         """
         on init create the monster
@@ -62,24 +63,28 @@ class Monster:
         """
         self.populate()
 
+
 def get_word(filename):
     """open the file, choose a line"""
-    with open(f'data/{filename}', encoding="UTF-8") as text_file:
+    with open(f"data/{filename}", encoding="UTF-8") as text_file:
         return random.choice(text_file.readlines()).strip()
+
 
 def adjective():
     """give me a random adjective"""
-    return get_word('adjectives.txt').capitalize()
+    return get_word("adjectives.txt").capitalize()
+
 
 def noun():
     """give me a random noun"""
-    return get_word('nouns.txt').capitalize()
+    return get_word("nouns.txt").capitalize()
 
 
 def verb():
     """give me a random verb"""
-    return get_word('verbs.txt').capitalize()
+    return get_word("verbs.txt").capitalize()
+
 
 def place():
     """give me a random British place"""
-    return get_word('places.txt')
+    return get_word("places.txt")
