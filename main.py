@@ -1,10 +1,9 @@
+"""
+This will choose random Doctor Who episodes for you
+"""
 import sys
 import random
-from rw.nouns import noun
-from rw.verbs import verb
-from rw.adjectives import adjective
-from rw.monster import Monster
-from rw.places import place
+from rw.words import noun, verb, adjective, Monster, place
 from rw.config import get_config
 from rw.tweet import tweet_it
 
@@ -18,6 +17,7 @@ doctors = [
     "Colin Baker",
     "Sylvester McCoy",
     "Paul McGann",
+    "John Hurt",
     "Christopher Eccleston",
     "David Tennant",
     "Matt Smith",
@@ -28,8 +28,15 @@ doctors = [
 
 
 def get_episode_title(randomize=True):
+    """
+    get monsters and if randomize is set then send back
+    one random sentence, otherwise populate them all
+    (used for testing)
+    """
     monster = Monster()
     monster_two = Monster()
+    if monster == monster_two:
+        monster_two.incorrect()
     sentences = [
         f"{noun()} of the {monster.plural}",
         f"{noun()} for the {monster.plural}",
@@ -51,6 +58,7 @@ def get_episode_title(randomize=True):
 
 
 def get_hashtag():
+    """give me a hashtag"""
     hashtags = ["", "#DoctorWho", "#DrWho", "#DoctorWhoFlux", "#TARDIS"]
     return random.choice(hashtags)
 

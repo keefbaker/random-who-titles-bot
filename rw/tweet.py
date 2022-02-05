@@ -6,7 +6,7 @@ import tweepy
 
 
 def tweet_it(text, config):
-    """ """
+    """given text and a config, it will tweet"""
     client = create_client(config, "w")
     response = client.create_tweet(text=text)
     print(response)
