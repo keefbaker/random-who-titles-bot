@@ -56,7 +56,7 @@ class Monster:
         self.singular = monster["s"]
         self.plural = monster["p"]
 
-    def incorrect(self):
+    def replace(self):
         """
         if we don't like it, give us another one
         """

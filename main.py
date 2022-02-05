@@ -36,7 +36,7 @@ def get_episode_title(randomize=True):
     monster = Monster()
     monster_two = Monster()
     while monster.singular == monster_two.singular:
-        monster_two.incorrect()
+        monster_two.replace()
     sentences = [
         f"{noun()} of the {monster.plural}",
         f"{noun()} for the {monster.plural}",
