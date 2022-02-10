@@ -87,4 +87,4 @@ def verb():
 
 def place():
     """give me a random British place"""
-    return get_word("places.txt")
+    return get_word("places.txt").split(",")[0]
