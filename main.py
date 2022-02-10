@@ -37,7 +37,7 @@ def get_episode_title(randomize=True):
     monster_two = Monster()
     while monster.singular == monster_two.singular:
         monster_two.replace()
-    do = random.choice([
+    do_bad_to = random.choice([
         "in",
         "invade",
         "destroy",
@@ -52,7 +52,7 @@ def get_episode_title(randomize=True):
         f"{noun()} of the {monster.plural}",
         f"The {monster.plural} {verb()}",
         f"The {monster.singular} {noun()}",
-        f"{monster.plural} {do} {place()}",
+        f"{monster.plural} {do_bad_to} {place()}",
         f"{monster.plural} {verb()} {place()}",
         f"{verb()} the {monster.singular}",
         f"{noun()} of the {monster.plural}",
