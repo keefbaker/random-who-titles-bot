@@ -37,7 +37,7 @@ def get_episode_title(randomize=True):
     monster_two = Monster()
     while monster.singular == monster_two.singular:
         monster_two.replace()
-    do = [
+    do = random.choice([
         "in",
         "invade",
         "destroy",
@@ -45,7 +45,7 @@ def get_episode_title(randomize=True):
         "oppress",
         "dominate",
         "do",
-    ]
+    ])
     sentences = [
         f"{noun()} of the {monster.plural}",
         f"{noun()} for the {monster.plural}",
