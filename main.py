@@ -59,6 +59,7 @@ def get_episode_title(randomize=True):
         f"{monster.plural} vs {monster_two.plural}",
         f"The {adjective()} {noun()}",
         f"The {adjective()} {monster.singular}",
+        f"The {monster.singular} in the {noun()}",
         f"{adjective()} {monster.plural}, {adjective()} {monster.plural}",
     ]
     # of the, is the most common name so add more of them into the mix
