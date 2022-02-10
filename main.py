@@ -37,13 +37,22 @@ def get_episode_title(randomize=True):
     monster_two = Monster()
     while monster.singular == monster_two.singular:
         monster_two.replace()
+    do = [
+        "in",
+        "invade",
+        "destroy",
+        "take",
+        "oppress",
+        "dominate",
+        "do",
+    ]
     sentences = [
         f"{noun()} of the {monster.plural}",
         f"{noun()} for the {monster.plural}",
         f"{noun()} of the {monster.plural}",
         f"The {monster.plural} {verb()}",
         f"The {monster.singular} {noun()}",
-        f"{monster.plural} in {place()}",
+        f"{monster.plural} {do} {place()}",
         f"{monster.plural} {verb()} {place()}",
         f"{verb()} the {monster.singular}",
         f"{noun()} of the {monster.plural}",
@@ -52,6 +61,8 @@ def get_episode_title(randomize=True):
         f"The {adjective()} {monster.singular}",
         f"{adjective()} {monster.plural}, {adjective()} {monster.plural}",
     ]
+    # of the, is the most common name so add more of them into the mix
+    sentences += [f"{noun()} of the {monster.plural}"] * 4
     if randomize:
         return random.choice(sentences)
     return sentences
