@@ -91,7 +91,7 @@ def get_episode_title(randomize=True):
         f"The {adjective()} {noun()}",
         f"The {adjective()} {monster.singular}",
         f"The {monster.singular} in the {noun()}",
-        f"{monster.plural} in {planet()}",
+        f"{monster.plural} on {planet()}",
     ]
     # of the, is the most common name so add more of them into the mix
     sentences += [f"{noun()} of the {monster.plural}"] * 4
