@@ -71,7 +71,7 @@ def get_episode_title(randomize=True):
 
 def get_hashtag():
     """give me a hashtag"""
-    hashtags = ["", "#DoctorWho", "#DrWho", "#DoctorWhoFlux", "#TARDIS"]
+    hashtags = ["", "#DoctorWho", "#DrWho", "#Whovian", "#TARDIS", "#TheDoctor"]
     return random.choice(hashtags)
 
 
