@@ -26,6 +26,37 @@ doctors = [
     "Jo Martin",
 ]
 
+planets = [
+    "Androzani Major",
+    "Skaro",
+    "Earth",
+    "Gallifrey",
+    "Telos",
+    "Peladon",
+    "Mondas",
+    "Spiridon",
+    "Balhoon",
+    "Deva Loka",
+    "Exillon",
+    "Hell",
+    "Karn",
+    "Logopolis",
+    "Mars",
+    "Metebelis Three",
+    "Midnight",
+    "Poosh",
+    "Ravolox",
+    "Sontar",
+    "Traken",
+    "Utopia",
+    "Zygor",
+]
+
+def planet():
+    """
+    Shortcut to make sentences easier for planets
+    """
+    return random.choice(planets)
 
 def get_episode_title(randomize=True):
     """
@@ -60,7 +91,7 @@ def get_episode_title(randomize=True):
         f"The {adjective()} {noun()}",
         f"The {adjective()} {monster.singular}",
         f"The {monster.singular} in the {noun()}",
-        f"{adjective()} {monster.plural}, {adjective()} {monster.plural}",
+        f"{monster.plural} in {planet()}",
     ]
     # of the, is the most common name so add more of them into the mix
     sentences += [f"{noun()} of the {monster.plural}"] * 4
