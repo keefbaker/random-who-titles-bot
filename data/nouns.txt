@@ -4907,7 +4907,6 @@ range
 ranger
 rank
 rap
-rape
 raspberry
 rat
 rate
