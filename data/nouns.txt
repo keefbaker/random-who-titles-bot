@@ -9,7 +9,6 @@ abdomen
 ability
 abnormality
 abolishment
-abortion
 abrogation
 absence
 abundance
