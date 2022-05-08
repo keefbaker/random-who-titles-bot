@@ -24,6 +24,7 @@ doctors = [
     "Peter Capaldi",
     "Jodie Whittaker",
     "Jo Martin",
+    "Ncuti Gatwa",
 ]
 
 planets = [
